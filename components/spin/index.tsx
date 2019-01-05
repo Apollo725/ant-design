@@ -97,10 +97,6 @@ class Spin extends React.Component<SpinProps, SpinState> {
     return !!(this.props && this.props.children);
   }
 
-  componentDidMount() {
-    this.componentDidUpdate();
-  }
-
   componentWillUnmount() {
     const updateSpinning: any = this.updateSpinning;
     if (updateSpinning && updateSpinning.cancel) {
